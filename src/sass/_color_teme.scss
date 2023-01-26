@@ -1,0 +1,131 @@
+:root{
+    --transition: 1s;
+  }
+  /* 
+  transition: var(--transition);
+  transparent
+   */
+svg{
+    fill:currentColor;
+}
+.my__container{
+    padding:30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    box-sizing: border-box;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4B48DB;/*фон*/
+    border: .6px solid #FFFFFF;
+    transition: var(--transition);
+  }
+  
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    right: 1px;
+    bottom: 1px;
+    border-radius: 20px;
+    background-color: #ffffff;/*кружочек*/
+    transition: 1s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FFFFFF;
+    border: .6px solid #4B48DB;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 10px #4B48DB;/*дымка вокруг овала*/
+  }
+  
+  input:checked + .slider::before {
+    background-color: #4B48DB;
+    transform: translateX(-20px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 20px;
+  }
+svg{
+  fill:currentColor;
+}
+.light{
+  background-color:#F4F4F4;
+  color:#111321;
+  transition: var(--transition);
+}
+.dark{
+  background-color: #2E2E2E;
+  color:#F4F4F4;
+  transition: var(--transition);
+}
+.light__svg{
+color: #4B48DB;
+transition: var(--transition);
+}
+.dark__svg{
+  color: #5F6775;
+  transition: var(--transition);
+}
+.toggle__box{
+  border: solid 1px red;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle__box__large__size{
+    width: 148px;
+    height: 24px;
+}
+.toggle__box__small__size{
+    width: 98px;
+    height: 21px;
+}
+////////input///////////////////
+.search__size::placeholder{
+    color: rgb(191, 25, 25);
+}
+.input__plase{
+    position: relative;
+}
+.input__plase input{
+    width: 213px;
+    height: 31px;
+    border-radius: 20px;
+    padding-left: 40px;
+}
+.input__plase div{
+    position: absolute;
+    top:7px;
+    left: 12px;
+    // transform: translate(-50%,-50%);
+}
+.search__size{
+    padding-left: 32px;
+    border-radius: 20px;
+}
