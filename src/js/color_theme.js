@@ -7,6 +7,7 @@ const svgSearch = document.querySelector('#svg-search');
 const searchInput = document.querySelector('#search-input');
 const svgMenu = document.querySelector('#svg-menu');
 const svgX = document.querySelector('#svg-x');
+
 function colorTheme(){
     body.classList.toggle('light__theme');
     body.classList.toggle('dark__theme');//body
