@@ -5,6 +5,6 @@ const toggle = document.querySelector('.toggle');
 
 toggle.addEventListener('click', colorTheme);
 
-function checkColor(){
-    if()
-}
+// function checkColor(){
+//     if()
+// }
