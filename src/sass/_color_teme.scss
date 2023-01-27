@@ -5,9 +5,9 @@
   transition: var(--transition);
   transparent
    */
-svg{
-    fill:currentColor;
-}
+// svg{
+//     fill:currentColor;
+// }
 .my__container{
     padding:30px;
     margin-left: auto;
@@ -76,24 +76,6 @@ svg{
 svg{
   fill:currentColor;
 }
-.light{
-  background-color:#F4F4F4;
-  color:#111321;
-  transition: var(--transition);
-}
-.dark{
-  background-color: #2E2E2E;
-  color:#F4F4F4;
-  transition: var(--transition);
-}
-.light__svg{
-color: #4B48DB;
-transition: var(--transition);
-}
-.dark__svg{
-  color: #5F6775;
-  transition: var(--transition);
-}
 .toggle__box{
   border: solid 1px red;  
   display: flex;
@@ -108,18 +90,25 @@ transition: var(--transition);
     width: 98px;
     height: 21px;
 }
-////////input///////////////////
-.search__inpute__light__theme{
-  background-color: transparent;
-  border: 1px solid #F4F4F4;
+.light__theme{
+  background-color:#F4F4F4;
+  color:#111321;
+  transition: var(--transition);
 }
-.search__inpute__dark__theme{
-  background-color: transparent;
-  border: 1px solid #111321;
+.dark__theme{
+  background-color: #2E2E2E;
+  color:#F4F4F4;
+  transition: var(--transition);
 }
-.search__size::placeholder{
-    color: rgb(191, 25, 25);
+.svg__light__theme{
+color: #4B48DB;
+transition: var(--transition);
 }
+.svg__dark__theme{
+  color: #5F6775;
+  transition: var(--transition);
+}
+////input//////
 .input__plase{
     position: relative;
 }
@@ -133,18 +122,34 @@ transition: var(--transition);
     position: absolute;
     top:7px;
     left: 12px;
-    // transform: translate(-50%,-50%);
 }
 .search__size{
     padding-left: 32px;
     border-radius: 20px;
 }
-.search__theme__light{
-  border: 1px  solid  #111321;
+.search__size::placeholder{
+    color: rgb(191, 25, 25);
 }
-.search__theme__dark{
-  border: 1px solid#F4F4F4;
+//////////
+.svg__search__light__theme{
+    color: #111321;
+}
+.svg__search__dark__theme{
+    color: #757575;
+}
+.input__seatch__light__theme{
+  background-color: transparent;
+  border: 1px solid #111321;
+  color:#111321;
+}
+.input__seatch__dark__theme{
+  background-color: transparent;
+  border: 1px solid #757575;
+  color: #757575;
 }
 .menu__burger{
   background-color : red;
+}
+.svg__x .x{
+  stroke:red;
 }
