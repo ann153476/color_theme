@@ -16,6 +16,7 @@ svg{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .switch {
     position: relative;
@@ -71,6 +72,7 @@ svg{
   .slider.round {
     border-radius: 20px;
   }
+  ///////////////////////////////////////
 svg{
   fill:currentColor;
 }
@@ -107,6 +109,14 @@ transition: var(--transition);
     height: 21px;
 }
 ////////input///////////////////
+.search__inpute__light__theme{
+  background-color: transparent;
+  border: 1px solid #F4F4F4;
+}
+.search__inpute__dark__theme{
+  background-color: transparent;
+  border: 1px solid #111321;
+}
 .search__size::placeholder{
     color: rgb(191, 25, 25);
 }
@@ -128,4 +138,13 @@ transition: var(--transition);
 .search__size{
     padding-left: 32px;
     border-radius: 20px;
+}
+.search__theme__light{
+  border: 1px  solid  #111321;
+}
+.search__theme__dark{
+  border: 1px solid#F4F4F4;
+}
+.menu__burger{
+  background-color : red;
 }
