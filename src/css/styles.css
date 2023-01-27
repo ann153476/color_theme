@@ -1,5 +1,5 @@
 :root{
-    --transition: 1s;
+    --transition: all 1s;
   }
   /* 
   transition:var(--transition);
@@ -50,12 +50,13 @@
     bottom: 1px;
     border-radius: 20px;
     background-color: #ffffff;/*кружочек*/
-    transition: 1s;
+    transition: all 1s;
   }
   
   input:checked + .slider {
     background-color: #FFFFFF;
     border: .6px solid #4B48DB;
+    transition: all 1s;
   }
   
   input:focus + .slider {
@@ -110,15 +111,16 @@ svg{
 /*///////////////////js////THEME////////////////////////////*/
 
 /*////////////////BODY/////////////////////////////*/
+body{
+  transition:var(--transition);
+}
 .light__theme{
   background-color:#F4F4F4;
   color:#111321;
-  transition:var(--transition);
 }
 .dark__theme{
   background-color: #2E2E2E;
   color:#F4F4F4;
-  transition:var(--transition);
 }
 /*//////////////////////TOGGLE////////////////////*/
 .svg__light__theme{
